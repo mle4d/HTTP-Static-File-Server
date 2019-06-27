@@ -5,7 +5,7 @@ const { getPath } = require('../lib/file-path');
 describe('app path', () => {
   it('get path', () => {
     const path = getPath('./index.html');
-    expect(path).toEqual('./pub-dir/index.html');
+    expect(path).toEqual('../../pub-dir/index.html');
   });
 
   it('gets html', () => {
